@@ -5,6 +5,10 @@ function App () {
     alert('Click me 3')
   }
 
+  const handleAddToCart = id => {
+    alert('Buying item ' + id)
+  }
+
   return (
     <>
       {/* <button onClick='handleClick()'>Click Me</button> */}
@@ -12,6 +16,8 @@ function App () {
       <button onClick={handleClick}>Cleck Me 3</button>
 
       <button onClick={() => alert('Click me 4')}>Click Me 4</button>
+
+      <button onClick={() => handleAddToCart(100)}>Buy Now</button>
     </>
   )
 }
